@@ -30,7 +30,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio" className=" mt-8 sm:py-16 pt-20 pb-40 snap-start">
+    <section id="portfolio" className=" mt-8 sm:py-16 pt-20 pb-48 snap-start">
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -71,7 +71,7 @@ const Portfolio = () => {
                   ></div>
                 </div>
 
-                <div className="sm:absolute w-full h-full flex flex-col sm:items-start items-center justify-between sm:text-left font-raleway py-8 sm:px-8 sm:bg-gradient-to-tr sm:from-gray-900 sm:opacity-0 sm:hover:opacity-100 sm:text-white rounded-lg ">
+                <div className="sm:absolute w-full h-full flex flex-col sm:items-start items-center justify-end sm:text-left font-raleway py-8 sm:px-8 sm:bg-gradient-to-tr sm:from-gray-900 sm:opacity-0 sm:hover:opacity-100 sm:text-white rounded-lg ">
                   <h3 className="sm:text-[2rem] text-[1.3rem] sm:font-semibold">
                     {work.title}
                   </h3>
@@ -94,7 +94,7 @@ const Portfolio = () => {
               </motion.a>
             ))}
         </motion.div>
-        <motion.div className="sm:px-10 px-4 py-16">
+        <motion.div className="sm:px-10 px-4 pt-8 pb-16">
           <Link
             variants={itemVariants}
             to="/projects"
