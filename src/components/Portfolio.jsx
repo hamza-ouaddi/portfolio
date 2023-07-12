@@ -94,7 +94,7 @@ const Portfolio = () => {
               </motion.a>
             ))}
         </motion.div>
-        <motion.div className="sm:px-10 px-4 pt-8 pb-16">
+        <motion.div className="sm:px-10 px-4 sm:pt-12 pt-8 pb-16">
           <Link
             variants={itemVariants}
             to="/projects"
