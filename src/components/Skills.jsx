@@ -30,7 +30,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="lg:max-w-[1400px] flex sm:p-10 mx-auto sm:px-10 md:px-2 sm:py-16 py-20 justify-center items-center snap-start sm:min-h-[954px]"
+      className="lg:max-w-[1400px] flex sm:p-10 mx-auto sm:px-10 md:px-2 sm:py-16 pt-20 pb-40 justify-center items-center snap-start sm:min-h-[954px]"
     >
       <motion.div
         variants={containerVariants}
@@ -55,10 +55,10 @@ const Skills = () => {
           className={`${styles.paragraph} text-gray-600 mt-2 dark:text-gray-300 sm:w-[70%]`}
         >
           My skills cover both front-end and back-end technologies, along with
-          expertise in database management. Besides, I bring graphic design
+          expertise in database management. Moreover, I bring graphic design
           capabilities into play, allowing me to create visually captivating
           interfaces with a keen focus on user experience (UI/UX), as well as
-          branding and 3D,
+          branding and 3D.
         </motion.p>
 
         <motion.div className="flex flex-1 justify-center items-center gap-6 flex-wrap w-full mt-12 text-gray-600 dark:text-gray-100">

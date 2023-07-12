@@ -30,7 +30,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="sm:px-10 my-8 sm:py-16 py-20 snap-start h-screen"
+      className="sm:px-10 my-8 sm:py-16 pt-20 pb-40 snap-start h-screen"
     >
       <motion.div
         variants={containerVariants}
@@ -55,10 +55,10 @@ const Services = () => {
         </motion.p>
         <motion.p
           variants={itemVariants}
-          className={`${styles.paragraph}  text-gray-600 dark:text-gray-400 mt-2 sm:w-[70%]`}
+          className={`${styles.paragraph}  text-gray-600 dark:text-gray-400 mt-2 sm:w-[70%] italic font-semibold`}
         >
-          Bringing the ideas to life, and delivering engaging digital
-          experiences that stand out.
+          "Bringing the ideas to life, and delivering engaging digital
+          experiences that stand out."
         </motion.p>
 
         <motion.div className="lg:flex flex-wrap md:gap-10 mt-12">

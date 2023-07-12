@@ -37,7 +37,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="flex flex-row-reverse justify-center items-center sm:px-10 sm:py-16 py-20 snap-start h-screen"
+        className="flex flex-row-reverse justify-center items-center sm:px-10 sm:py-20 pt-20 pb-40 snap-start h-screen"
       >
         <motion.div
           variants={containerVariants}

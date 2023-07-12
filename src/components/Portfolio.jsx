@@ -30,7 +30,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio" className=" mt-8 sm:py-16 py-20 snap-start">
+    <section id="portfolio" className=" mt-8 sm:py-16 pt-20 pb-40 snap-start">
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -72,27 +72,24 @@ const Portfolio = () => {
                 </div>
 
                 <div className="sm:absolute w-full h-full flex flex-col sm:items-start items-center justify-between sm:text-left font-raleway py-8 sm:px-8 sm:bg-gradient-to-tr sm:from-gray-900 sm:opacity-0 sm:hover:opacity-100 sm:text-white rounded-lg ">
-                  <div className="w-full flex items-end justify-end"></div>
-                  <div>
-                    <h3 className="sm:text-[2rem] text-[1.3rem] sm:font-semibold">
-                      {work.title}
-                    </h3>
-                    <p className="leading-8  sm:text-[1rem] text-[0.95rem]">
-                      {work.description}
-                    </p>
+                  <h3 className="sm:text-[2rem] text-[1.3rem] sm:font-semibold">
+                    {work.title}
+                  </h3>
+                  <p className="leading-8  sm:text-[1rem] text-[0.95rem]">
+                    {work.description}
+                  </p>
 
-                    <hr className="w-48 h-[1px] bg-gray-200 border-0 rounded my-2 dark:bg-gray-100"></hr>
-                    <ul className="flex sm:justify-start justify-center gap-4 mt-2 flex-wrap">
-                      {work.technologies.map((technology, index) => (
-                        <li
-                          className="px-2 text-sm bg-gray-400/30 dark:bg-gray-400/30 rounded"
-                          key={index}
-                        >
-                          {technology}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                  <hr className="w-48 h-[1px] bg-gray-200 border-0 rounded my-2 dark:bg-gray-100"></hr>
+                  <ul className="flex sm:justify-start justify-center gap-4 mt-2 flex-wrap">
+                    {work.technologies.map((technology, index) => (
+                      <li
+                        className="px-2 text-sm bg-gray-400/30 dark:bg-gray-400/30 rounded"
+                        key={index}
+                      >
+                        {technology}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </motion.a>
             ))}

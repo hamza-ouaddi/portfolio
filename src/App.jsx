@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <main
-        className={`bg-white px-10 md:px-40 lg:px-80}  ${
+        className={`bg-white px-6 sm:px-10 md:px-40 lg:px-80}  ${
           darkMode ? "dark" : ""
         }`}
       >
