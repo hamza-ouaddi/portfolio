@@ -35,7 +35,7 @@ const Portfolio = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="show"
-        className="lg:px-10 px-2 text-center"
+        className="lg:px-10 px-2 pb-16 text-center"
       >
         <motion.h3
           variants={itemVariants}
@@ -71,7 +71,7 @@ const Portfolio = () => {
                   ></div>
                 </div>
 
-                <div className="sm:absolute w-full h-full flex flex-col sm:items-start items-center justify-end sm:text-left font-raleway py-8 sm:px-8 sm:bg-gradient-to-tr sm:from-gray-900 sm:opacity-0 sm:hover:opacity-100 sm:text-white rounded-lg ">
+                <div className="sm:absolute w-full h-full flex flex-col sm:items-start items-center justify-end sm:text-left font-raleway py-16 sm:px-8 sm:bg-gradient-to-tr sm:from-gray-900 sm:opacity-0 sm:hover:opacity-100 sm:text-white rounded-lg ">
                   <h3 className="sm:text-[2rem] text-[1.3rem] sm:font-semibold">
                     {work.title}
                   </h3>
