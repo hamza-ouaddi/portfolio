@@ -67,7 +67,7 @@ const Services = () => {
               key={service.id}
               variants={itemVariants}
               transition={{ delay: 1.2 }}
-              className="flex-1 font-raleway text-center sm:p-10 px-4 py-8 shadow-lg rounded-xl sm:m-10 mx-4 mb-10 bg-gray-100  dark:bg-gray-800 card hover:shadow-gray-200 dark:hover:shadow-gray-500 dark:hover:text-dark"
+              className="group flex-1 font-raleway text-center sm:p-10 px-4 py-8 shadow-lg rounded-xl sm:m-10 mx-4 mb-10 bg-gray-100  dark:bg-gray-800 card hover:shadow-gray-200 dark:hover:shadow-gray-500 dark:hover:text-dark"
             >
               <img
                 src={service.icon}
@@ -75,7 +75,7 @@ const Services = () => {
                 className="w-[100px] h-[100px] mx-auto  "
               />
               <h3 className="text-lg font-medium pt-8 pb-2">{service.title}</h3>
-              <p className="py-2 leading-8 text-gray-400 hover:text-dark ">
+              <p className="py-2 leading-8 text-gray-400 group-hover:text-dark ">
                 {service.description}
               </p>
               <hr className="w-48 h-0.5 mx-auto my-4 bg-gray-200 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
@@ -83,7 +83,7 @@ const Services = () => {
                 {service.skills.map((skill, index) => (
                   <li
                     key={index}
-                    className="text-gray-600 py-1 dark:text-gray-400 dark:hover:text-dark "
+                    className="text-gray-600 py-1 dark:text-gray-400 dark:group-hover:text-dark "
                   >
                     {skill}
                   </li>
