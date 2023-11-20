@@ -35,7 +35,7 @@ const Projects = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="show"
-        className="lg:px-10 px-2 pb-8 text-center"
+        className="lg:px-10 px-2 pb-8 text-center mt-12"
       >
         <motion.h3
           variants={itemVariants}

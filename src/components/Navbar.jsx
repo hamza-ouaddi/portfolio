@@ -58,7 +58,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         variants={containerVariants}
         initial="hidden"
         whileInView="show"
-        className="flex sm:justify-between py-10 mb-12 snap-start  "
+        className="flex sm:justify-between py-10 snap-start  absolute w-full"
       >
         <Link to="/">
           <motion.img
