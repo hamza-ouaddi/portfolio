@@ -16,7 +16,7 @@ function App() {
           darkMode ? "dark" : ""
         }`}
       >
-        <section className={` min-h-screen `}>
+        <section className={` min-h-screen relative `}>
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 
           <Outlet />
