@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { works } from "../constants";
 import styles from "../styles";
@@ -6,6 +6,14 @@ import Footer from "../components/Footer";
 import { AiFillGithub } from "react-icons/ai";
 
 const Projects = () => {
+  const [selectedCategory, setSelectedCategory] = useState("Development");
+
+  const categories = ["Development", "UI/UX", "Graphic Design"];
+
+  const filterWorks = works.filter(
+    (work) => work.category === selectedCategory
+  );
+
   const containerVariants = {
     show: {
       transition: {
@@ -50,12 +58,30 @@ const Projects = () => {
           All the projects that I made in Development and Design
         </motion.p>
 
-        <motion.div className="flex flex-col gap-10 sm:px-10 px-4 lg:flex-row lg:flex-wrap mt-12">
-          {works
+        <motion.div variants={itemVariants} className="mt-12">
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className={`px-4 py-2 mr-4 rounded ${
+                selectedCategory === category
+                  ? "bg-gray-800 text-white"
+                  : "bg-gray-200 text-gray-700"
+              }`}
+            >
+              {category}
+            </button>
+          ))}
+        </motion.div>
+
+        <motion.div
+          variants={itemVariants}
+          className="flex flex-col gap-10 sm:px-10 px-4 lg:flex-row lg:flex-wrap mt-12"
+        >
+          {filterWorks
             .sort((a, b) => b.id - a.id)
             .map((work) => (
-              <motion.a
-                variants={itemVariants}
+              <a
                 href={work.link}
                 className="lg:basis-1/3 sm:flex flex-col flex-1 relative inset-0 justify-center items-center"
                 key={work.id}
@@ -90,7 +116,7 @@ const Projects = () => {
                     ))}
                   </ul>
                 </div>
-              </motion.a>
+              </a>
             ))}
         </motion.div>
       </motion.div>
