@@ -15,16 +15,28 @@ import uiux from "../assets/ui-ux.svg";
 import design from "../assets/design.svg";
 
 //Works Pictures
-import minty from "../assets/Portfolio/minty.png";
-import architectWebsite from "../assets/Portfolio/architect-website.png";
-import networkWebsite from "../assets/Portfolio/network-website.png";
-import newsletterSignup from "../assets/Portfolio/newsletter-signup.png";
-import todolist from "../assets/Portfolio/to-do-list.png";
-import blogWebsite from "../assets/Portfolio/blog-website.png";
-import keeperApp from "../assets/Portfolio/keeper-app.png";
-import weatherApp from "../assets/Portfolio/weather-app.png";
-import secretlySocialNetwork from "../assets/Portfolio/secretly-social-network.png";
-import stockManagementSystem from "../assets/Portfolio/stock-management-system.png";
+////Development
+import minty from "../assets/Portfolio/development/minty.png";
+import architectWebsite from "../assets/Portfolio/development/architect-website.png";
+import networkWebsite from "../assets/Portfolio/development/network-website.png";
+import newsletterSignup from "../assets/Portfolio/development/newsletter-signup.png";
+import todolist from "../assets/Portfolio/development/to-do-list.png";
+import blogWebsite from "../assets/Portfolio/development/blog-website.png";
+import keeperApp from "../assets/Portfolio/development/keeper-app.png";
+import weatherApp from "../assets/Portfolio/development/weather-app.png";
+import secretlySocialNetwork from "../assets/Portfolio/development/secretly-social-network.png";
+import stockManagementSystem from "../assets/Portfolio/development/stock-management-system.png";
+import colab from "../assets/Portfolio/development/colab.png";
+
+////UI-UX
+import colabUI from "../assets/Portfolio/ui-ux/Colab-UI-Web-Design.png";
+import schoolWebpageUI from "../assets/Portfolio/ui-ux/School-Website-UI.jpg";
+
+////Graphic Design
+import personalBranding from "../assets/Portfolio/graphic-design/Personal-Branding.jpg";
+import mbouaBranding from "../assets/Portfolio/graphic-design/MBOUA-Branding.png";
+import hopeBranding from "../assets/Portfolio/graphic-design/Hope-Branding.png";
+import creativeEyeBranding from "../assets/Portfolio/graphic-design/CreativeEye-Branding.png";
 
 //Services
 export const services = [
@@ -63,18 +75,86 @@ export const services = [
 //Works
 export const works = [
   {
-    id: "10",
-    image: stockManagementSystem,
-    title: "Stock Management System",
+    id: "graphic-design-04",
+    image: creativeEyeBranding,
+    title: "CreativEye Studio Brand Identity",
+    description: "Brand Identity for Creative Studio.",
+    technologies: ["Adobe Illustrator", "Adobe Photoshop"],
+    link: "https://dribbble.com/shots/22272622-CreativEye-Studio-Brand-Identity",
+    category: "Graphic Design",
+  },
+  {
+    id: "graphic-design-03",
+    image: hopeBranding,
+    title: "Hope Advertising Agency Brand",
+    description: "Branding for Marketing Agency.",
+    technologies: ["Adobe Illustrator", "Adobe Photoshop"],
+    link: "https://dribbble.com/shots/22008588-Hope-Advertising-Agency-Brand",
+    category: "Graphic Design",
+  },
+  {
+    id: "graphic-design-02",
+    image: mbouaBranding,
+    title: "M'BOUA | Natural mineral water brand",
+    description: "Branding for Natural mineral water company.",
+    technologies: ["Adobe Illustrator", "Adobe Photoshop"],
+    link: "https://dribbble.com/shots/22008549-M-BOUA-Natural-mineral-water-brand",
+    category: "Graphic Design",
+  },
+  {
+    id: "graphic-design-01",
+    image: personalBranding,
+    title: "Personal Branding",
+    description: "Personal Hamza Ouâddi Branding.",
+    technologies: ["Adobe Illustrator", "Adobe Photoshop"],
+    link: "https://www.behance.net/gallery/148307495/Personal-Branding",
+    category: "Graphic Design",
+  },
+  {
+    id: "ui-ux-02",
+    image: schoolWebpageUI,
+    title: "School Homepage UI Concept",
+    description: "school UI webpage design.",
+    technologies: ["Figma"],
+    link: "https://dribbble.com/shots/23081744-School-Homepage-UI-Concept",
+    category: "UI/UX",
+  },
+  {
+    id: "ui-ux-01",
+    image: colabUI,
+    title: "CoLab",
     description:
-      "The Stock Management System is a C# (.Net ) and SQL project designed to streamline stock management processes. ",
-    technologies: ["C#", "SQL"],
-    link: "https://github.com/hamza-ouaddi/Stock-Management-System",
-    repo: "https://github.com/hamza-ouaddi/Stock-Management-System",
+      "CoLab, a platform for discovering gigs and job offers, built with PHP Laravel and Tailwind CSS.",
+    technologies: ["Figma"],
+    link: "https://dribbble.com/shots/22505281-Colab-Post-Discover-Job-Offers-UI-Web-Design",
+    category: "UI/UX",
+  },
+  {
+    id: "dev-11",
+    image: colab,
+    title: "CoLab",
+    description:
+      "CoLab, a platform for discovering gigs and job offers, built with PHP Laravel and Tailwind CSS.",
+    technologies: ["PHP Laravel", "Tailwind CSS"],
+    link: "https://github.com/hamza-ouaddi/CoLab",
+    repo: "https://github.com/hamza-ouaddi/CoLab",
+    category: "Development",
   },
 
   {
-    id: "9",
+    id: "dev-10",
+    image: stockManagementSystem,
+    title: "Stock Management System",
+    description:
+      "The Stock Management System is a C# (.Net ) and SQL project designed to streamline stock management processes.",
+    technologies: ["C#", "SQL"],
+    link: "https://github.com/hamza-ouaddi/Stock-Management-System",
+    repo: "https://github.com/hamza-ouaddi/Stock-Management-System",
+    category: "Development",
+  },
+
+  {
+    id: "dev-09",
     image: secretlySocialNetwork,
     title: "Secretly Social Network",
     description:
@@ -82,10 +162,11 @@ export const works = [
     technologies: ["EJS", "Node.js", "Express.js", "MongoDB"],
     link: "https://secretly-social-network.onrender.com/",
     repo: "https://github.com/hamza-ouaddi/Secretly-Social-Network",
+    category: "Development",
   },
 
   {
-    id: "8",
+    id: "dev-08",
     image: keeperApp,
     title: "Keeper App",
     description:
@@ -93,10 +174,11 @@ export const works = [
     technologies: ["React", "Material UI"],
     link: "https://keeper-app-one-iota.vercel.app/",
     repo: "https://github.com/hamza-ouaddi/keeper-app",
+    category: "Development",
   },
 
   {
-    id: "7",
+    id: "dev-07",
     image: todolist,
     title: "To Do List",
     description:
@@ -112,10 +194,11 @@ export const works = [
     ],
     link: "https://to-do-list-4fft.onrender.com",
     repo: "https://github.com/hamza-ouaddi/To-Do-List",
+    category: "Development",
   },
 
   {
-    id: "6",
+    id: "dev-06",
     image: weatherApp,
     title: "Weather App",
     description:
@@ -123,9 +206,10 @@ export const works = [
     technologies: ["HTML", "CSS", "JavaScript"],
     link: "https://hamza-ouaddi.github.io/Weather-App/",
     repo: "https://github.com/hamza-ouaddi/Weather-App",
+    category: "Development",
   },
   {
-    id: "5",
+    id: "dev-05",
     image: blogWebsite,
     title: "Blog Website",
     description: "a Blog Website project, to create, read, and delete a post.",
@@ -140,10 +224,11 @@ export const works = [
     ],
     link: "https://hamza-ouaddi.github.io/Weather-App/",
     repo: "https://github.com/hamza-ouaddi/Blog-Website",
+    category: "Development",
   },
 
   {
-    id: "4",
+    id: "dev-04",
     image: newsletterSignup,
     title: "Newsletter Signup",
     description:
@@ -151,36 +236,40 @@ export const works = [
     technologies: ["HTML", "CSS", "Node.js", "Express.js"],
     link: "https://newsletter-signup-puce.vercel.app/",
     repo: "https://github.com/hamza-ouaddi/Newsletter-Signup",
+    category: "Development",
   },
 
   {
-    id: "3",
+    id: "dev-03",
     image: networkWebsite,
     title: "Network Website",
     description: "A social media service landing webpage.",
     technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
     link: "https://hamza-ouaddi.github.io/Network/",
     repo: "https://github.com/hamza-ouaddi/Network",
+    category: "Development",
   },
 
   {
-    id: "2",
+    id: "dev-02",
     image: architectWebsite,
     title: "Architect Portfolio",
     description: "A landing webpage for Architect as a portfolio",
     technologies: ["HTML", "CSS", "JavaScript"],
     link: "https://hamza-ouaddi.github.io/Caroline-Aubrey-Architect-Portfolio/",
     repo: "https://github.com/hamza-ouaddi/Caroline-Aubrey-Architect-Portfolio",
+    category: "Development",
   },
 
   {
-    id: "1",
+    id: "dev-01",
     image: minty,
     title: "Minty",
     description: "Minty, is an application website for Tea lovers.",
     technologies: ["HTML", "CSS", "Bootstrap 5"],
     link: "https://hamza-ouaddi.github.io/Minty/",
     repo: "https://github.com/hamza-ouaddi/Minty",
+    category: "Development",
   },
 ];
 
