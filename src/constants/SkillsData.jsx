@@ -4,6 +4,8 @@ import {
   SiJavascript,
   SiMongodb,
   SiReact,
+  SiVuedotjs,
+  SiLaravel,
   SiCsharp,
   SiMysql,
   SiBootstrap,
@@ -59,9 +61,21 @@ export const skills = [
   },
 
   {
+    id: "skill-17",
+    icon: <SiVuedotjs />,
+    title: "Vue.js",
+  },
+
+  {
     id: "skill-8",
     icon: <DiNodejsSmall />,
     title: "Node.js",
+  },
+
+  {
+    id: "skill-18",
+    icon: <SiLaravel />,
+    title: "PHP Laravel",
   },
 
   {
