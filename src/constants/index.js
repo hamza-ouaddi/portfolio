@@ -27,10 +27,12 @@ import weatherApp from "../assets/Portfolio/development/weather-app.png";
 import secretlySocialNetwork from "../assets/Portfolio/development/secretly-social-network.png";
 import stockManagementSystem from "../assets/Portfolio/development/stock-management-system.png";
 import colab from "../assets/Portfolio/development/colab.png";
+import atlasEstate from "../assets/Portfolio/development/atlas-estate.jpg";
 
 ////UI-UX
 import colabUI from "../assets/Portfolio/ui-ux/Colab-UI-Web-Design.png";
 import schoolWebpageUI from "../assets/Portfolio/ui-ux/School-Website-UI.jpg";
+import atlasEstateui from "../assets/Portfolio/ui-ux/Atlas-Estate-Website-UI.jpg";
 
 ////Graphic Design
 import personalBranding from "../assets/Portfolio/graphic-design/Personal-Branding.jpg";
@@ -111,6 +113,15 @@ export const works = [
     category: "Graphic Design",
   },
   {
+    id: "ui-ux-3",
+    image: atlasEstateui,
+    title: "Atlas Estate Website Design",
+    description: "UI web design for a real estate platform.",
+    technologies: ["Figma"],
+    link: "https://dribbble.com/shots/23136344-Atlas-Estate-Website-Design",
+    category: "UI/UX",
+  },
+  {
     id: "ui-ux-02",
     image: schoolWebpageUI,
     title: "School Homepage UI Concept",
@@ -128,6 +139,26 @@ export const works = [
     technologies: ["Figma"],
     link: "https://dribbble.com/shots/22505281-Colab-Post-Discover-Job-Offers-UI-Web-Design",
     category: "UI/UX",
+  },
+  {
+    id: "dev-12",
+    image: atlasEstate,
+    title: "Atlas Estate",
+    description:
+      "Atlas Estate, a real estate platform built with React, Node.js with Express.js, and MongoDB with Prisma. Tailwind CSS and Mantine UI for styling. And Auth0 for authentication. ",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Prisma",
+      "Auth0",
+      "Tailwind CSS",
+      "Mantine UI",
+    ],
+    link: "https://github.com/hamza-ouaddi/atlas-estate-website",
+    repo: "https://github.com/hamza-ouaddi/atlas-estate-website",
+    category: "Development",
   },
   {
     id: "dev-11",

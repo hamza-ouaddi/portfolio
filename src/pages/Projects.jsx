@@ -43,7 +43,7 @@ const Projects = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="show"
-        className="lg:px-10 px-2 pb-8 text-center mt-12"
+        className=" pb-8 text-center mt-12"
       >
         <motion.h3
           variants={itemVariants}
@@ -76,7 +76,7 @@ const Projects = () => {
 
         <motion.div
           variants={itemVariants}
-          className="flex flex-col gap-10 sm:px-10 px-4 lg:flex-row lg:flex-wrap mt-12"
+          className="flex flex-col gap-10 lg:flex-row lg:flex-wrap mt-12"
         >
           {filterWorks
             .sort((a, b) => b.id - a.id)
