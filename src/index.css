@@ -35,3 +35,35 @@ main {
   border-left: 2px solid #06b6d4;
   font-size: 1.1rem;
 }
+
+.thumbnail {
+  display: flex !important;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-dots {
+  margin-top: 32px;
+}
+
+.slick-dots li button:before {
+  color: #1f2937;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #1f2937;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  color: #1f2937;
+}
+
+.dark .slick-dots li button:before,
+.dark .slick-dots li.slick-active button:before,
+.dark .slick-next:before,
+.dark .slick-prev:before {
+  color: #fff;
+}
