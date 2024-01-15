@@ -1,44 +1,35 @@
-//Logos
-import logoDark from "../assets/logo-dark.png";
-import logoWhite from "../assets/logo-white.png";
-import logoSymbolDark from "../assets/logo-icon-dark.png";
-
-//Navbar Menu Icons
-import menuIcon from "../assets/menu.svg";
-import menuIconDark from "../assets/menu-dark.svg";
-import closeIcon from "../assets/close.svg";
-import closeIconDark from "../assets/close-dark.svg";
-
-//Services Icons
-import code from "../assets/coding.svg";
-import uiux from "../assets/ui-ux.svg";
-import design from "../assets/design.svg";
-
-//Works Pictures
-////Development
-import minty from "../assets/Portfolio/development/minty.png";
-import architectWebsite from "../assets/Portfolio/development/architect-website.png";
-import networkWebsite from "../assets/Portfolio/development/network-website.png";
-import newsletterSignup from "../assets/Portfolio/development/newsletter-signup.png";
-import todolist from "../assets/Portfolio/development/to-do-list.png";
-import blogWebsite from "../assets/Portfolio/development/blog-website.png";
-import keeperApp from "../assets/Portfolio/development/keeper-app.png";
-import weatherApp from "../assets/Portfolio/development/weather-app.png";
-import secretlySocialNetwork from "../assets/Portfolio/development/secretly-social-network.png";
-import stockManagementSystem from "../assets/Portfolio/development/stock-management-system.png";
-import colab from "../assets/Portfolio/development/colab.png";
-import atlasEstate from "../assets/Portfolio/development/atlas-estate.jpg";
-
-////UI-UX
-import colabUI from "../assets/Portfolio/ui-ux/Colab-UI-Web-Design.png";
-import schoolWebpageUI from "../assets/Portfolio/ui-ux/School-Website-UI.jpg";
-import atlasEstateui from "../assets/Portfolio/ui-ux/Atlas-Estate-Website-UI.jpg";
-
-////Graphic Design
-import personalBranding from "../assets/Portfolio/graphic-design/Personal-Branding.jpg";
-import mbouaBranding from "../assets/Portfolio/graphic-design/MBOUA-Branding.png";
-import hopeBranding from "../assets/Portfolio/graphic-design/Hope-Branding.png";
-import creativeEyeBranding from "../assets/Portfolio/graphic-design/CreativeEye-Branding.png";
+import {
+  logoDark,
+  logoWhite,
+  logoSymbolDark,
+  menuIcon,
+  menuIconDark,
+  closeIcon,
+  closeIconDark,
+  code,
+  uiux,
+  design,
+  minty,
+  architectWebsite,
+  networkWebsite,
+  newsletterSignup,
+  todolist,
+  blogWebsite,
+  keeperApp,
+  weatherApp,
+  secretlySocialNetwork,
+  stockManagementSystem,
+  colab,
+  atlasEstate,
+  techhub,
+  colabUI,
+  schoolWebpageUI,
+  atlasEstateui,
+  personalBranding,
+  mbouaBranding,
+  hopeBranding,
+  creativeEyeBranding,
+} from "./images";
 
 //Services
 export const services = [
@@ -139,6 +130,17 @@ export const works = [
     technologies: ["Figma"],
     link: "https://dribbble.com/shots/22505281-Colab-Post-Discover-Job-Offers-UI-Web-Design",
     category: "UI/UX",
+  },
+  {
+    id: "dev-13",
+    image: techhub,
+    title: "TechHub | IT Community Platform",
+    description:
+      "TechHub is a community platform for IT enthusiasts. Built with Next.js, MongoDB, Shadcn UI, Tailwind CSS, and Clerk for authentication and user management.",
+    technologies: ["Next.js", "MongoDB", "Clerk", "Shadcn UI", "Tailwind CSS"],
+    link: "https://tech-hub-tau.vercel.app/",
+    repo: "https://github.com/hamza-ouaddi/tech-hub",
+    category: "Development",
   },
   {
     id: "dev-12",

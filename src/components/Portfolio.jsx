@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { works } from "../constants";
 import styles from "../styles";
 import { Link } from "react-router-dom";
-import { AiFillGithub } from "react-icons/ai";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
