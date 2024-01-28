@@ -13,6 +13,7 @@ import {
   SiAdobephotoshop,
   SiAdobeillustrator,
   SiFigma,
+  SiNextdotjs,
 } from "react-icons/si";
 import { BsWordpress } from "react-icons/bs";
 import { SiBlender } from "react-icons/si";
@@ -58,6 +59,12 @@ export const skills = [
     id: "skill-7",
     icon: <SiReact />,
     title: "React",
+  },
+
+  {
+    id: "skill-19",
+    icon: <SiNextdotjs />,
+    title: "Next.js",
   },
 
   {
