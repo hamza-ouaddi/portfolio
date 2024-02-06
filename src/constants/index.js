@@ -25,6 +25,7 @@ import {
   colabUI,
   schoolWebpageUI,
   atlasEstateui,
+  issueTrackerUI,
   personalBranding,
   mbouaBranding,
   hopeBranding,
@@ -102,6 +103,15 @@ export const works = [
     technologies: ["Adobe Illustrator", "Adobe Photoshop"],
     link: "https://www.behance.net/gallery/148307495/Personal-Branding",
     category: "Graphic Design",
+  },
+  {
+    id: "ui-ux-4",
+    image: issueTrackerUI,
+    title: "Issue Tracker Dashboard UI Design",
+    description: "A web app UI design for Issue tracking and management.",
+    technologies: ["Figma"],
+    link: "https://dribbble.com/shots/23573917-Issue-Tracker-Dashboard-UI-Design",
+    category: "UI/UX",
   },
   {
     id: "ui-ux-3",

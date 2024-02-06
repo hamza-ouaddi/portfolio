@@ -33,6 +33,7 @@ export { default as techhub } from "../assets/Portfolio/development/techhub.jpg"
 export { default as colabUI } from "../assets/Portfolio/ui-ux/Colab-UI-Web-Design.png";
 export { default as schoolWebpageUI } from "../assets/Portfolio/ui-ux/School-Website-UI.jpg";
 export { default as atlasEstateui } from "../assets/Portfolio/ui-ux/Atlas-Estate-Website-UI.jpg";
+export { default as issueTrackerUI } from "../assets/Portfolio/ui-ux/Issue-Tracker-Dashboard-UI-Design.jpg";
 
 ////Graphic Design
 export { default as personalBranding } from "../assets/Portfolio/graphic-design/Personal-Branding.jpg";
